@@ -1,4 +1,4 @@
-# AdaptiveApp
+# A system to provide word hints according to the user’s knowledge about the word. This system is not invasive, does not break user’s existing flow, and works automatically while giving users the ultimate control.
 
 To install the server backend - 
 
@@ -14,3 +14,6 @@ Unzip and move it into src/main/resources
 Open command line
 Go into root folder(HintMateBackend) and run the following command - 
 mvn spring-boot:run
+
+For front-end - 
+Install tampermonkey to run the user-script on the browser
