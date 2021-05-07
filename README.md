@@ -1,4 +1,4 @@
-# A system to provide word hints according to the user’s knowledge about the word. This system is not invasive, does not break user’s existing flow, and works automatically while giving users the ultimate control.
+# A system to provide hints for the words on web-pages according to the user’s knowledge and vocabulary. This system is not invasive, does not break user’s existing flow, and works automatically while giving users the ultimate control.
 
 To install the server backend - 
 
