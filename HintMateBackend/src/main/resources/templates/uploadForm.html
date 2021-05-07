@@ -1,0 +1,39 @@
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+	<style>
+		.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		}
+	</style>
+</head>
+<body>
+
+	<div th:if="${message}" align="center">
+		<h2 th:text="${message}"/>
+	</div>
+
+
+	<img src="../images/HintMate.png" alt="HintMate" class="center" th:src="@{images/HintMate.png}"/>
+
+	<div align="center">
+		<form method="POST" enctype="multipart/form-data" action="/">
+			<table>
+				<tr><td>File to upload:</td><td><input type="file" name="file" /></td></tr>
+				<tr><td></td><td><input type="submit" value="Upload" /></td></tr>
+			</table>
+		</form>
+	</div>
+
+	<div align="center">
+		<ul>
+			<li th:each="file : ${files}">
+				<a th:href="${file}" th:text="${file}" />
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>
